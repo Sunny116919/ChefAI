@@ -1,9 +1,12 @@
-// Project-level build.gradle.kts
+// In android/build.gradle.kts
 
 plugins {
+    // We only need to declare the google-services plugin here.
+    // Flutter will handle the Android and Kotlin plugin versions automatically.
     id("com.google.gms.google-services") version "4.4.1" apply false
 }
 
+// The rest of your file remains exactly the same
 allprojects {
     repositories {
         google()
